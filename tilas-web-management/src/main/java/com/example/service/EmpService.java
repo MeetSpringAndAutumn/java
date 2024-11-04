@@ -2,7 +2,6 @@ package com.example.service;
 
 import com.example.pojo.Emp;
 import com.example.pojo.PageBean;
-import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
@@ -19,4 +18,10 @@ public interface EmpService {
     void delete(List<Integer> ids);
 
     void save(Emp emp);
+
+    Emp getEmpById(Integer id);
+
+    void update(Emp emp);
+
+    Emp login(String username, String password);
 }
